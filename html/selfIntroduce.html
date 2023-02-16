@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자기소개: [우테코-BE]주디</title>
+    <script src="../js/script.js"></script>
+    <H1>자기소개</H1>
+</head>
+
+<body>
+<div>
+    <ul>
+        <li> 이름: 주디(judy)</li>
+        <li>사는 곳: 강남</li>
+        <li>안녕하세요🙇‍♂️ 울산에서 갓 상경한 시골쥐🐭 주디입니다. 만나서 반갑습니다!</li>
+    </ul>
+</div>
+<hr class="two">
+
+<div>
+    <H1>주디의 인생 영화 BEST 5</H1>
+    <table border="1" width="80%" height=100 bgcolor=#11a9c1 bordercolor="white" cellspacing="3" align="center">
+        <tr align="center" bgcolor="white">
+            <td>순위</td>
+            <td>제목</td>
+            <td>포스터 사진</td>
+            <td>줄거리</td>
+            <td>바로가기</td>
+        </tr>
+
+        <tr align="center" height=300 bgcolor="white">
+            <td>1</td>
+            <td>주토피아</td>
+            <td><img src="../images/zootopia.png" width="200" height="300"></td>
+            <td>주디 홉스는 어렸을 때부터 누구나 평등한 세상을 만들기 위해 주토피아의 경찰이 되는 꿈을 가진다. 하지만 남들은 토끼는 경찰이 될 수 없다고 비웃는데...주디는 경찰이 될 수 있을까?
+            </td>
+            <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=130850" target="_blank">바로가기</a></td>
+        </tr>
+
+        <tr align="center" height=300 bgcolor="white">
+            <td>2</td>
+            <td>겨울왕국</td>
+            <td><img src="../images/frozen.png" width="200" height="300"></td>
+            <td>아무에게도 들켜선 안되는 마법의 비밀을 들킨 엘사가 나라를 떠나게 되자 왕국에 위기가 닥치고, 적극적인 성격의 동생 안나는 자신의 자매와 왕국을 구원하기 위해 모험을 떠나게 된다</td>
+            <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=100931" target="_blank">바로가기</a></td>
+        </tr>
+
+        <tr align="center" height=300 bgcolor="white">
+            <td>3</td>
+            <td>크루엘라</td>
+            <td><img src="../images/cruella.png" width="200" height="300"></td>
+            <td>성인이 된 '에스텔라'는 자신의 꿈이던 '남작부인'(엠마 톰슨)의 패션쇼에 참여하게 되고, '남작부인'과 같이 지내다가 충격적인 사실을 알게되는데...</td>
+            <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=187322" target="_blank">바로가기</a></td>
+        </tr>
+
+        <tr align="center" height=300 bgcolor="white">
+            <td>4</td>
+            <td>라푼젤</td>
+            <td><img src="../images/tangled.png" width="200" height="300"></td>
+            <td>옛날 어느 마을에 아이가 없던 부부가 있었다. 어느날 아이를 임신한 아내는 이웃에 사는 마녀가 키우는 라푼젤(들상추)을 몹시 먹고 싶어했다. 라푼젤을 먹지 못하면 죽을 것 같다고 졸라대는
+                아내를 위해 남편은 마녀의 밭에서 몰래 라푼젤을 훔쳐내는데..
+            </td>
+            <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=75470#" target="_blank">바로가기</a></td>
+        </tr>
+
+        <tr align="center" height=300 bgcolor="white">
+            <td>5</td>
+            <td>어거스트 러쉬</td>
+            <td><img src="../images/augustRush.png" width="200" height="300"></td>
+            <td>꿈보다 아름답던 뉴욕에서의 단 하룻밤, 그로부터 11년 후, 눈을 감으면 세상의 모든 소리가 음악이 되는 천재 소년 '에반'이 세상과 소통하며 부모님을 찾아 떠나는 기적 같은 이야기를
+                그려 낸 감동 음악을 펼친 작품
+            </td>
+            <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=66158" target="_blank">바로가기</a></td>
+        </tr>
+
+    </table>
+</div>
+
+<br>
+<hr class="two">
+<H1>방명록</H1>
+
+<div>
+
+    <form action='a.jsp'>
+        이름: <input type="text" id="name" onkeyup="printName()">
+
+        <div>
+            <br>
+            본인 취향 영화를 골라주세요
+        </div>
+
+        <script type="text/javascript" src="../js/script.js"></script>
+
+        <div>
+            <input type="checkbox" name="movie" value="zootopia" onclick="printCheckBoxCount()"/>주토피아
+            <input type="checkbox" name="movie" value="frozen" onclick="printCheckBoxCount()"/>겨울왕국
+            <input type="checkbox" name="movie" value="cruella" onclick="printCheckBoxCount()"/>크루엘라
+            <input type="checkbox" name="movie" value="tangled" onclick="printCheckBoxCount()"/>라푼젤
+            <input type="checkbox" name="movie" value="augustRush" onclick="printCheckBoxCount()"/>어거스트 러쉬
+        </div>
+        <br>
+
+        <div>
+            <form action="login_page.php">
+                <button class="button-search" type="button" onclick="alert(printName())"> 등록</button>
+                <button class="favorite styled" type="reset"> 취소</button>
+            </form>
+        </div>
+
+    </form>
+
+</div>
+</body>
+</html>
